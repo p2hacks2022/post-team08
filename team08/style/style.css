@@ -1,10 +1,16 @@
+html{
+    min-height: 100%;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-flow: column;
     min-height: 100vh;
+    width: 100%;
+    /* height: ; */
+    background: linear-gradient(-180deg, rgba(233, 240, 250, 1), rgba(205, 234, 236, 1));
 }
-
 
 header {
     background: #333333;
@@ -13,7 +19,7 @@ header {
 }
 
 main {
-    background: #ffffff;
+    /* background: #ffffff; */
     flex: 1;
 }
 
@@ -38,7 +44,7 @@ footer {
 .btn-menu.disabled, .btn-menu:disabled {
   color: #fff;
   background-color: #fff;
-  border-color: #fff;
+  border-color: rgb(122, 176, 218);
 }
 
 /* focusされた時の枠線の色 */
@@ -75,4 +81,8 @@ footer {
     max-width: 100%;
     padding: 0;
     margin-top: var(--bs-gutter-y);
+}
+
+.btn-group{
+    margin: 0;
 }
