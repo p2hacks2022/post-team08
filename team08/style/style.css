@@ -1,0 +1,9 @@
+html{
+    min-height: 100%;
+}
+body {
+    width: 100%;
+    /* height: ; */
+    background: linear-gradient(-180deg, rgba(233, 240, 250, 1), rgba(190, 245, 245, 1));
+
+  }
