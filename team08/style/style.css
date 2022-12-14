@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: #333333;
+    color: #ffffff;
+    height: 40px;
+}
+
+main {
+    background: #ffffff;
+    flex: 1;
+}
+
+footer {
+    background: #ffffff;
+    color: #ffffff;
+    height: 70px;
+    /*position: fixed;*/
+    bottom: 0;
+}
+
+.h-70px{
+    height: 70px !important;
+}
+
+.w-130px{
+    width: 130px !important;
+}
+
+/* 通常のボタン色 */
+.btn-menu,
+.btn-menu.disabled, .btn-menu:disabled {
+  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* focusされた時の枠線の色 */
+.btn-menu:focus, .btn-menu.focus,
+.btn-menu:not(:disabled):not(.disabled):active:focus, .btn-menu:not(:disabled):not(.disabled).active:focus,
+.show > .btn-menu.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(203, 231, 244, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-menu:hover {
+  color: #fff;
+  background-color: #B6DCE2;
+  border-color: #B6DCE2;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-menu:not(:disabled):not(.disabled):active, .btn-menu:not(:disabled):not(.disabled).active,
+.show > .btn-menu.dropdown-toggle {
+  color: #fff;
+  background-color: #A7CBD0;
+  border-color: #A7CBD0;
+}
+
+.container-menu{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row-menu{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-top: var(--bs-gutter-y);
+}
