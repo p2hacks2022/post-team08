@@ -8,23 +8,12 @@ body {
 
 }
 
-.title_font{
+.home_title{
     font-family: 'Jacques Francois', serif;
     font-family: 'Zen Maru Gothic', sans-serif; 
-    /* text-align:center;
-    position:relative;
-    height: 100px; */
-    height:60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+    width: 100%;
+    /* height: 500px; */
+    margin-top: 300px;
+    text-align: center;
 
-/* .title_font div{
-    height:60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
+}
