@@ -181,10 +181,10 @@ ul li:not(:last-child){
  .label_diary{
   font-family: 'Zen Maru Gothic';
   display:block;
-  font-size: .8125em; 
-  position: relative;
-  top: 1.0em;
-  left: 1em;
+  font-size: .8125em;
+  /* position: relative; 
+  top: 20px;
+  left: 1em; */
   padding-bottom: 1.2em;
   color: #8ec9ff;
   opacity: 1;
@@ -218,7 +218,7 @@ input[type="submit"]{
   cursor:pointer;
 }
 
-.js-hide-label label{
+.js-hide-label label{ 
   opacity:0;
     top:1.8em;
   }
