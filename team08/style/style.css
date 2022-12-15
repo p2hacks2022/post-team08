@@ -1,6 +1,6 @@
 @font-face {
   font-family: font-Number;
-  src: local('Futura PT');
+  src: url(https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800);
   unicode-range: U+0021-0040;
 }
 
