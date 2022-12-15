@@ -178,7 +178,7 @@ ul li:not(:last-child){
   margin-bottom: 0em;
 }
   
-label{
+ .label_diary{
   font-family: 'Zen Maru Gothic';
   display:block;
   font-size: .8125em; 
@@ -189,7 +189,7 @@ label{
   color: #8ec9ff;
   opacity: 1;
   transition:top 0.4s ease, opacity 0.6s ease , color 0.4s ease;
-}
+} 
   
 input,textarea{
   display:block;
