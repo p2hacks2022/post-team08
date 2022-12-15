@@ -86,3 +86,22 @@ footer {
 .btn-group{
     margin: 0;
 }
+
+.fa-rotate-135 {
+	transform: rotate(135deg);
+}
+
+.fixed_btn
+{
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 100px; 
+  right: 30px;
+  padding: 6px 10px;
+
+}
