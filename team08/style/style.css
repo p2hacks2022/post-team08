@@ -1,3 +1,9 @@
+@font-face {
+  font-family: font-Number;
+  src: local('Futura PT');
+  unicode-range: U+0021-0040;
+}
+
 html{
     min-height: 100%;
 }
@@ -8,6 +14,7 @@ body {
     flex-flow: column;
     min-height: 100vh;
     width: 100%;
+    color: #333;
     /* height: ; */
     background: linear-gradient(-180deg, rgba(233, 240, 250, 1), rgba(205, 234, 236, 1));
 }
@@ -27,8 +34,8 @@ footer {
     background: #ffffff;
     color: #ffffff;
     height: 70px;
-    /*position: fixed;*/
-    bottom: 0;
+    /* position: fixed; */
+    bottom: 0%;
 }
 
 .h-70px{
@@ -79,18 +86,28 @@ footer {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding: 0;
-    margin-top: var(--bs-gutter-y);
+    padding: 0%;
+    margin: 0%;
+    /* margin-top: var(--bs-gutter-y); */
 }
+
+/* .btn{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+} */
 
 .btn-group{
     margin: 0;
+    padding: 0;
+    bottom: 0%;
 }
 
 .fa-rotate-135 {
 	transform: rotate(135deg);
 }
 
+/*日記保存ボタン*/
 .fixed_btn
 {
   position: fixed;
@@ -100,8 +117,116 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: #fff;
   border-radius: 50%;
-  bottom: 100px; 
-  right: 30px;
-  padding: 6px 10px;
-
+  bottom: 15%; 
+  right: 15%;
+  padding: 6px 6px;
 }
+
+/* *,*:after,*:before{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+} */
+
+
+/*日記書き込みフォーム*/
+section{
+  max-width:20.5em;
+  max-height: 40em;
+  margin: 0%;
+  padding: 0%;
+}
+  
+/* ul{
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+} */
+
+li{
+  list-style-type: none;
+  position: relative;
+}
+
+/* h1{
+  display:block;
+  text-align: left;
+  background: #323A45;
+  color:white;
+  margin:0;
+  padding: 0.75em 0;
+  font-weight: normal;
+  border-radius:5px 5px 0 0;
+} */
+  
+form{
+  position: relative;
+  border-radius:15px 15px 15px 15px;
+  height: 40em;
+  margin-top: 1em;
+  border:1px solid #ccc;
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+ul li:not(:last-child){
+  margin: 0%;
+  padding: 0%;
+  display:block;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 0em;
+}
+  
+label{
+  font-family: 'Zen Maru Gothic';
+  display:block;
+  font-size: .8125em; 
+  position: relative;
+  top: 1.0em;
+  left: 1em;
+  padding-bottom: 1.2em;
+  color: #8ec9ff;
+  opacity: 1;
+  transition:top 0.4s ease, opacity 0.6s ease , color 0.4s ease;
+}
+  
+input,textarea{
+  display:block;
+  width:100%;
+  height:100%;
+  border:0;
+  outline:none;
+  padding:1em 1em 1em;
+  font-size: 1.2em;
+}
+  
+textarea{
+  font-family: 'Zen Maru Gothic';
+  height:30em;
+  resize:none;
+  font-size: 1.2em;
+  padding-left: 0.85em;
+}
+
+input[type="submit"]{
+  display:block;
+  background:  #77aff4;
+  padding: 1em;
+  color:white;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.js-hide-label label{
+  opacity:0;
+    top:1.8em;
+  }
+  
+  .js-unhighlight-label label{
+  color:#333;
+  }
+  
+  .js-highlight-label label{
+  color:#f1773b;
+  }  
