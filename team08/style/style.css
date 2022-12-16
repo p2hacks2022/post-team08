@@ -285,3 +285,15 @@ input[type="submit"]{
   margin-top: 3rem;
   text-align:center;
 }
+button.btn--exchange {
+  color: #000;
+  background-color: #e0f8ff;
+  border-bottom: 5px solid #aaaaaa;
+}
+
+button.btn--exchange:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #e0f8ff;
+  border-bottom: 2px solid #aaaaaa;
+}
