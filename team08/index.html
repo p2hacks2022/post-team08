@@ -29,14 +29,21 @@
                     <label class="label_diary" for="message">　実現したいみらいは？:</label>
                     <textarea style = "font-family: 'Zen Maru Gothic';"placeholder="実現したいみらいは？" id="message" name="message" tabindex="2"></textarea>
                 </li>
-                <button type="submit" name="add">
-                    追加
-                </button>
             </form>
-            <button class="fixed_btn"><i class="fa-solid fa-pen-to-square" style="font-size: 23px"></i></button>
         </section>
     </main>
-
+    <label class="fixed_btn" for="pop-up"><i class="fa-solid fa-pen-to-square" style="font-size: 23px"></i></label>
+    <input type="checkbox" id="pop-up">
+    <div class="overlay">
+        <div class="window">
+            <label class="close" for="pop-up">×</label>
+            <div class="text"><b>保存して交換しますか？<br></b></div>
+            <div class="exchange">
+                <button type="submit" form="form" name="add">はい</button></td>
+                <button><label for="pop-up">いいえ</label></button></td>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-menu">
             <div class="row-menu">
