@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/mirai_icon.svg"></link>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/468c02fa87.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <p class="mymirai"><br><br>自分のみらい</p>
+
+    
+        <div class="future_hope"><span style="font-family: Jost; margin-top: 1em;">　YYYY/XX/DD</span> <hr><span style="font-family: Zen Maru Gothic;">　ああああああああああ</span>
+            <div>
+                <div class="dropdown" style="font-family: Zen Maru Gothic; margin-left:5%; margin-top:1.2em; display:inline-block">
+                    <button class="hope btn-hope btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-star" style="font-size: 12px; margin-bottom:5%;"></i> このみらいは叶った？
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-hoped" href="#"><i class="fa-solid fa-medal"></i> 叶った</a></li>
+                      <li><a class="dropdown-hopenot" href="#"><i class="fa-solid fa-cloud-moon-rain"></i> 叶わなかった</a></li>
+                    </ul>
+                </div>
+        
+                
+                <i class="fa-solid fa-star" style="font-size: 18px; color: #E5BC2A; display: inline-block; padding-left:2%; margin-top: 50px;"></i>
+            </div>
+        </div>
+
+        <label class="back_btn" for="pop-up"><i class="fa-solid fa-angle-left" style="font-size:23px; color: #fff;"></i></label>
+
+    </main>
+
+    <footer>
+        <div class="container-menu">
+            <div class="row-menu">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" onclick="location.href='future.html'" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" >
+                    <label class="btn btn-menu rounded-0 w-130px h-70px" style="font-family: 'Zen Maru Gothic'; font-size: 12px; padding-top: 4%; margin-left: 0;" for="btnradio1"><i class="fa-solid fa-earth-asia" style="font-size: 20px;"></i><br>みんなのみらい</label>
+                    
+                    <input type="radio" onclick="location.href='index.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-menu rounded-0 w-130px h-70px" style="font-family: 'Zen Maru Gothic'; font-size: 12px; padding-top: 4%; margin-left: 0;" for="btnradio2"><i class="fa-solid fa-right-left fa-rotate-135" style="font-size: 20px;"></i><br>みらい交換</label>
+                
+                    <input type="radio" onclick="location.href='starpulldown.html'" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+                    <label class="btn btn-menu rounded-0 w-130px h-70px" style="font-family: 'Zen Maru Gothic'; font-size: 12px; padding-top: 4%; margin-left: 0; background-color: #add8e6;" for="btnradio3">
+                        <i class="fa-solid fa-star" style="font-size: 20px; color: white;"></i><p style="color: white;">マイみらい</p>
+                    </label>
+                </div>
+            </div>
+          </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

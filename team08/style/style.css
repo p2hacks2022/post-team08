@@ -412,3 +412,14 @@ button.btn--exchange:hover {
   background: #e0f8ff;
   border-bottom: 2px solid #aaaaaa;
 }
+
+.wrapper{
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
