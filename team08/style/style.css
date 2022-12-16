@@ -213,6 +213,10 @@ input[type="checkbox"]:checked + label svg {
     bottom: 0%;
 }
 
+.btn-group:not(:first-child), .btn:not(:first-child){
+  margin-left: 0;
+}
+
 .fa-rotate-135 {
 	transform: rotate(135deg);
 }
