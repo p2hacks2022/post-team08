@@ -1,5 +1,5 @@
 @font-face {
-  font-family: font-Number;
+  font-family: 'font-Number';
   src: url(https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800);
   unicode-range: U+0021-0040;
 }
@@ -17,6 +17,7 @@ body {
     color: #333;
     /* height: ; */
     background: linear-gradient(-180deg, rgba(233, 240, 250, 1), rgba(205, 234, 236, 1));
+    font-family: 'Zen Maru Gothic';
 }
 
 header {
@@ -307,6 +308,19 @@ textarea{
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.future_hope{
+  position: relative;
+  border-radius:15px 15px 15px 15px;
+  margin : 0 auto;
+  height: 12em;
+  width: 75%;
+  padding-top: 15px;
+  margin-top: 1.5em;
+  border:1px solid #ccc;
+  background: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 input[type="submit"]{
   display:block;
   background:  #77aff4;
@@ -394,3 +408,82 @@ button.btn--exchange:hover {
   background: #e0f8ff;
   border-bottom: 2px solid #aaaaaa;
 }
+
+/* 自分の未来の文章配置 */
+.mymirai{
+  font-family: 'Zen Maru Gothic';
+  text-align: right;
+  font-size: 20px;
+  opacity: 1;
+  padding-bottom: 0.2em;
+  margin-right:13%;
+}
+
+.back_btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #83BABE;
+  border-radius: 50%;
+  left: 10%; 
+  top: 5%;
+  padding: 15px 10px;
+  text-align:center
+}
+
+.hope {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-hope {
+  color: #fff;
+  background-color: #35495b;
+  /* border-color: #F1D56F; */
+}
+
+.dropdown-hoped {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 500;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #FFF1BD;
+  border: 0;
+}
+
+.dropdown-hopenot {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 500;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #DDF4FB;
+  border: 0;
+}
+
