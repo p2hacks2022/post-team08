@@ -254,7 +254,7 @@ li{
   border-radius:5px 5px 0 0;
 } */
   
-form{
+.future_form{
   position: relative;
   border-radius:15px 15px 15px 15px;
   height: 40em;
