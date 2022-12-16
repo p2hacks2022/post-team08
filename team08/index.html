@@ -19,7 +19,8 @@
     <main>
         <label class="label_diary" for="name"><br>　みらいを描いて見ましょう。</label>
         <section class="container">
-            <form id="form" class="form" action="#" method="get">
+            <form id="form" class="form" action="{{ url('/home')}}" method="post">
+                {{ csrf_field() }}
                 <li>
                     <label class="label_diary" for="date"><br>　みらいの実現日は？:</label>
                     <input type="date" style = "font-family: Jost, Zen Maru Gothic;" placeholder="みらいの実現日は？" id="date" name="date" tabindex="1"/>
@@ -28,6 +29,9 @@
                     <label class="label_diary" for="message">　実現したいみらいは？:</label>
                     <textarea style = "font-family: 'Zen Maru Gothic';"placeholder="実現したいみらいは？" id="message" name="message" tabindex="2"></textarea>
                 </li>
+                <button type="submit" name="add">
+                    追加
+                </button>
             </form>
             <button class="fixed_btn"><i class="fa-solid fa-pen-to-square" style="font-size: 23px"></i></button>
         </section>
