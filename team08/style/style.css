@@ -63,6 +63,22 @@ footer {
   opacity: 1;
 }
 
+/* TAPボタン */
+.DivLink{
+  position:relative;
+  width:100%;
+  height:0;
+  background-color:none;
+}
+
+.DivLink .Link{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+
 /* いいねボタン */
 
 .inebody {
