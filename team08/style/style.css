@@ -286,7 +286,8 @@ li{
   
 form{
   position: relative;
-  border-radius:15px 15px 15px 15px;
+  /* border-radius:15px 15px 15px 15px; */
+  border-radius: 0.67em;
   height: 40em;
   margin-top: 1em;
   border:1px solid #ccc;
