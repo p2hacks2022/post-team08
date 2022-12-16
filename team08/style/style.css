@@ -534,3 +534,13 @@ button.btn--exchange:hover {
   border: 0;
 }
 
+.wrapper{
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
