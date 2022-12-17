@@ -238,7 +238,7 @@ input[type="checkbox"]:checked + label svg {
   height: 75px;
   border: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #fff;
+  background-color: #28757A;
   border-radius: 50%;
   bottom: 15%; 
   right: 15%;
@@ -473,7 +473,7 @@ button.btn--exchange:hover {
   height: 50px;
   border: none;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-color: #83BABE;
+  background-color: #28757A;
   border-radius: 50%;
   left: 10%; 
   top: 5%;
@@ -503,7 +503,7 @@ button.btn--exchange:hover {
 
 .btn-hope {
   color: #fff;
-  background-color: #35495b;
+  background-color: #28757A;
   /* border-color: #F1D56F; */
 }
 
