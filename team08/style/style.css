@@ -521,3 +521,7 @@ footer{
   bottom: 0;
   z-index: 1;
 }
+
+.colored{
+  background-color: #FFFF00;
+}
