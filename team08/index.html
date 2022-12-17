@@ -18,22 +18,22 @@
     </header> -->
     <div class="wrapper">
         <main>
-            <label class="label_diary" for="name"><br>　みらいを描いて見ましょう。</label>
+            <label class="label_diary" for="name" style="color:#28757A; font-weight:600;"><br>　みらいを描いて見ましょう。</label>
             <section class="container">
                 <form id="form" class="form" action="{{ url('/home')}}" method="post">
                     {{ csrf_field() }}
                     <li>
-                        <label class="label_diary" for="date"><br>　みらいの実現日は？:</label>
+                        <label class="label_diary" for="date" style="font-weight:600"><br>　みらいの実現日は？:</label>
                         <input type="date" style = "font-family: Jost, Zen Maru Gothic;" placeholder="みらいの実現日は？" id="date" name="date" tabindex="1"/>
                     </li>
                     <li>
-                        <label class="label_diary" for="message">　実現したいみらいは？:</label>
+                        <label class="label_diary" for="message" style="font-weight:600">　実現したいみらいは？:</label>
                         <textarea style = "font-family: 'Zen Maru Gothic';"placeholder="実現したいみらいは？" id="message" name="message" tabindex="2"></textarea>
                     </li>
                 </form>
             </section>
         </main>
-        <label class="fixed_btn" for="pop-up"><i class="fa-solid fa-pen-to-square" style="font-size: 23px"></i></label>
+        <label class="fixed_btn" for="pop-up"><i class="fa-solid fa-pen-to-square" style="font-size: 23px; color:white;"></i></label>
         <input type="checkbox" id="pop-up">
         <div class="overlay">
             <div class="window">
@@ -54,7 +54,7 @@
                         
                         <input type="button" onclick="location.href='index.html'" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                         <label class="btn btn-menu rounded-0 w-130px h-70px" style="font-family: 'Zen Maru Gothic'; font-size: 12px; padding-top: 4%; background-color: #add8e6; margin-left: 0;" for="btnradio2">
-                            <i class="fa-solid fa-right-left fa-rotate-135" style="font-size: 20px; color: white;"></i><p style="color: white;">みらい交換</p>
+                            <i class="fa-solid fa-right-left fa-rotate-135" style="font-size: 20px; color: #28757A;"></i><p style="color: #28757A; font-weight: 600;">みらい交換</p>
                         </label>
                     
                         <input type="button" onclick="location.href='starpulldown.html'" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
