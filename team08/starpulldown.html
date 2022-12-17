@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/468c02fa87.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -18,8 +19,9 @@
     
         
             <div class="future_hope"><span style="font-family: Jost; margin-top: 1em;">　YYYY/XX/DD</span> <hr><span style="font-family: Zen Maru Gothic;">　ああああああああああ</span>
-                <div>
-                    <div class="dropdown" style="font-family: Zen Maru Gothic; margin-left:5%; margin-top:1.2em; display:inline-block">
+                <div class="dropdownbox">
+                    <!-- レイアウトあり、ドロップダウンの文字変化なし -->
+                    <!-- <div class="dropdown" style="font-family: Zen Maru Gothic; margin-left:5%; margin-top:1.2em; display:inline-block">
                         <button class="hope btn-hope btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-star" style="font-size: 12px; margin-bottom:5%;"></i> このみらいは叶った？
                         </button>
@@ -28,15 +30,27 @@
                           <li><a class="dropdown-hopenot" href="#"><i class="fa-solid fa-cloud-moon-rain"></i> 叶わなかった</a></li>
                         </ul>
                     </div>
-            
-                    
-                    <i class="fa-solid fa-star" style="font-size: 18px; color: #E5BC2A; display: inline-block; padding-left:2%; margin-top: 50px;"></i>
+                    <i class="fa-solid fa-star" style="font-size: 18px; color: #E5BC2A; display: inline-block; padding-left:2%; margin-top: 50px;"></i> -->
+                    <!-- ドロップダウンの文字変化あり、レイアウトなし -->
+                    <div class="dropdown" style="font-family: Zen Maru Gothic; margin-left:5%; margin-top:3.0em; display:inline-block">
+                        <button type="button" class="btn btn-primary dropdown-toggle hope btn-hope btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-star" style="font-size: 12px; margin-bottom:5%;"></i>このみらいは叶った？
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item dropdown-hoped" value="　　　叶った　　　　"><i class="fas fa-medal"></i>叶った</button></li>
+                            <li><button class="dropdown-item dropdown-hopenot" value="　　叶わなかった　　"><i class="fas fa-cloud-moon-rain"></i>叶わなかった</button></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-star" style="font-size: 18px; color: #E5BC2A; display:inline-block; padding-left:0px; margin-bottom: 10px"></i>
+                
                 </div>
             </div>
     
             <label class="back_btn" for="pop-up"><i class="fa-solid fa-angle-left" style="font-size:23px; color: #fff;"></i></label>
     
         </main>
+    
+
     
         <footer>
             <div class="container-menu">
@@ -59,7 +73,17 @@
     </div>
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script>
+            $(function(){
+                $('.dropdown-menu .dropdown-item').click(function(){
+                    var visibleItem = $('.dropdown-toggle', $(this).closest('.dropdown'));
+                    visibleItem.text($(this).attr('value'));
+                });
+            });
+        </script>
 </body>
 </html>
