@@ -1,5 +1,3 @@
-// const { startDetecting } = require("react-native/Libraries/Utilities/PixelRatio");
-
 // 星を降らせるところ
 const star = document.getElementById("main_wrap");
 // 叶ったボタン
@@ -11,7 +9,7 @@ const color = document.getElementById("color");
 
 
 true_btn.addEventListener('click', () =>{
-    // すでにカードの色が変わっていた場合
+    // カードの色が変わっていなかった場合
     if(!color.classList.contains('colored')){
         color.classList.add('colored');
         star.classList.add('cherry-blossom-container');
