@@ -522,6 +522,9 @@ footer{
   z-index: 1;
 }
 
+.colored{
+  background-color: #FFF1BD;
+}
 /* お気に入り完了ボタン */
 .check_btn
 {
