@@ -1,13 +1,3 @@
-// const link = document.getElementById("came_true");
-// link.addEventListener('click', e=>{});
-
-// for(let i = 0; i < 5; i++){
-//     link.dispatchEvent(new Event('click'));
-// }
-
-// function openGoogleByMethod(){
-//     console.log("Even triggered");
-// }
 
 
 // 叶ったボタン
