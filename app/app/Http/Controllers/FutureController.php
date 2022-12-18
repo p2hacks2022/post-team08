@@ -32,25 +32,24 @@ class FutureController extends BaseController
 public function get_diaries(Request $req)
  {
      $diaries1 = Diary::all();
-     $diaries = Diary::find(1);
-     $diary_id = $diaries->diary_id;
-     $diary_time = $diaries->diary_time;
-     $diary_txt = $diaries->diary_txt;
-    return view('getmail', compact('diaries1','diary_time', 'diary_txt'));
+     $diary1 = Diary::find(4);
+     $diary2 = Diary::find(8);
+     $diary3 = Diary::find(21);
+    return view('getmail', compact('diary1','diary2', 'diary3'));
  }
 
  public function get_mail(Request $req)
  {
-     $diaries = Diary::find(1);
-     $diary_id = $diaries->diary_id;
-     $diary_time = $diaries->diary_time;
-     $diary_txt = $diaries->diary_txt;
-    return view('future', compact('diary_time', 'diary_txt','diary_id'));
+    $diaries1 = Diary::all();
+    $diary1 = Diary::find(4);
+    $diary2 = Diary::find(8);
+    $diary3 = Diary::find(21);
+   return view('future', compact('diary1','diary2', 'diary3'));
  }
 
  public function get_my_diary(Request $req)
  {
-     $diary = Diary::find(11);
+    $diary = Diary::find(20);
     return view('starpulldown', compact('diary'));
  }
 
