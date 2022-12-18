@@ -94,7 +94,7 @@
             </script> -->
             <form id="star_form" action="{{ url('/savestar')}}" method="post">
             {{ csrf_field() }}
-            <div class="future_mail">
+            <div class="future_mails">
                 <div class="">
                     <p class="datetime">　{{ $diary->diary_time }} </p>
                     <hr>
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="future_mail">
+            <div class="future_mails">
                 <div class="">
                     <p class="datetime">　{{ $diary2->diary_time }} </p>
                     <hr>
@@ -132,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="future_mail">
+            <div class="future_mails">
                 <div class="">
                     <p class="datetime">　{{ $diary3->diary_time }} </p>
                     <hr>
@@ -151,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="future_mail">
+            <div class="future_mails">
                 <div class="">
                     <p class="datetime">　{{ $diary4->diary_time }} </p>
                     <hr>
