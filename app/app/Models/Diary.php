@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Model
+class Diary extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -19,10 +19,10 @@ class User extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'user_id',
-        'my_diary_id',
-        'other_diary_id',
-        'other_star_id',
+        'diary_txt',
+        'star',
+        'diary_flag',
+        'diary_time',
         'created_at',
         'updated_at'
     ];
@@ -33,7 +33,7 @@ class User extends Model
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
+        'diary_id',
         'remember_token',
     ];
 

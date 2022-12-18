@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+// Route::get('/future', function () {
+//     return view('future');
+// });
+Route::get('/index', function () {
+    return view('index');
+});
+// Route::get('/starpulldown', function () {
+//     return view('starpulldown');
+// });
+
+Route::get('/future','App\Http\Controllers\FutureController@get_mail');
+Route::get('/starpulldown','App\Http\Controllers\FutureController@get_my_diary');
+
+Route::post('/welcome', 'App\Http\Controllers\FutureController@post');
+Route::post('/savestar', 'App\Http\Controllers\FutureController@sample_update_star');
