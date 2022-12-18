@@ -1,0 +1,39 @@
+/* starを表示するコンテナのスタイル */
+.cherry-blossom-container {
+    position: relative;
+    height: 100vh; /* コンテナの高さ */
+    width: 100%; /* コンテナの横幅 */
+    overflow: hidden; /* コンテナからはみ出した要素を隠す */
+  }
+  
+  /* starの花びらのスタイル */
+.star {
+  top: 0;
+  left: 0;
+	position: absolute;
+	background: #E5BC2A;
+	clip-path: polygon(50% 5%, 61% 40%, 98% 40%, 68% 62%, 79% 96%, 50% 75%, 21% 96%, 32% 62%, 2% 40%, 39% 40%);
+  transform: rotate(45deg);
+  animation: animate-petal 2s linear;
+} 
+
+  /* starが降るアニメーション */
+  @keyframes animate-petal {
+    0% {
+      top: 0;
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 100vh;
+      margin-left: -30%;
+      transform: rotate(1000deg);
+    }
+  }
